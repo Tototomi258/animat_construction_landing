@@ -7,7 +7,9 @@
   --primary-saturation: 51%;
   --primary-lightness: 34%;
 
-  --primary-color: hsla(var(--primary-hue) var(--primary-saturation) var(--primary-lightness) / 1);
+  --primary-color: hsla(
+    var(--primary-hue) var(--primary-saturation) var(--primary-lightness) / 1
+  );
 
   /* WHATSAPP COLOR */
   --wa-hue: 142;
@@ -21,10 +23,6 @@
 
 main {
   height: 100%;
-}
-
-main > .container {
-  padding-top: 3.5rem;
 }
 
 h1,
@@ -41,295 +39,6 @@ h3 {
   min-height: 100vh;
 }
 
-#app > div {
-  flex: 1;
-}
-
-.hidden {
-  display: none;
-}
-
-/* HEADER SECTION */
-
-header .navbar-nav .nav-item a.nav-link {
-  color: var(--accent-color);
-  font-size: 0.9rem;
-  transition: color 250ms ease-out;
-}
-
-header .navbar-nav .nav-item a.nav-link:hover {
-  color: var(--primary-color);
-}
-
-header .navbar-nav .nav-item a.nav-link.active {
-  color: var(--accent-color);
-  font-weight: bold;
-}
-
-/* NAVBAR SECTION */
-
-.navbar {
-  transition: background-color 250ms ease-out;
-  padding-top: 1em;
-}
-
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) translateY(25%);
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(106, 42, 131, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-light .navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0;
-}
-
-/* HERO SECTION */
-
-.hero-title {
-  background-color: hsla(0, 0%, 100%, 0.85);
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.header_text {
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  padding-top: 10rem;
-}
-
-.header_text h2 {
-  color: var(--primary-color);
-  font-family: "Nunito", sans-serif;
-  font-size: 2rem;
-  font-weight: normal;
-  text-align: center;
-}
-
-.hero {
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 8rem;
-}
-
-.hero-form {
-  background-color: hsla(218, 19%, 92%, 0.87);
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px hsla(0, 0%, 0%, 0.4);
-  color: var(--primary-color);
-  padding: 1.5em 2em;
-}
-
-.hero-form ul {
-  padding-left: 0;
-}
-
-.hero-form ul > li {
-  color: #6a2a83;
-  display: table-row;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.hero-form ul > li:before {
-  content: url("../images/Grupo 25.svg");
-  display: table-cell;
-  padding-right: 10px;
-  vertical-align: text-top;
-}
-
-.btn-form {
-  background: transparent linear-gradient(90deg, #e21982 0%, #ce1b82 21%, #9c2282 62%, #6a2a83 100%) 0% 0% no-repeat
-    padding-box;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  margin-bottom: 1.5em;
-  min-width: 10rem;
-}
-
-/* F-BOX SECTION */
-
-.f-box {
-  background-color: #fff;
-  padding-block: 5rem;
-  width: 100%;
-}
-
-.f-box-image,
-.f-box a,
-.f-box p,
-.f-box span,
-.f-box h2,
-.f-box hr {
-  color: var(--primary-color);
-}
-
-#f-box2 h2 {
-  margin-bottom: 1.5em;
-}
-
-#f-box2 .row .row {
-  margin-bottom: 1em;
-}
-
-#f-box2 {
-  background-color: hsla(218, 19%, 98%);
-}
-
-/* BANNERS */
-
-#banner1 {
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  height: 100vh;
-  padding-top: 70vh;
-  position: relative;
-}
-
-#banner1 .barra {
-  background: var(--primary-color) 0% 0% no-repeat padding-box;
-  mix-blend-mode: multiply;
-}
-
-#banner2 {
-  height: 50em;
-}
-
-#banner2 .trazado1 {
-  background-image: url("./images/Trazado 1.svg");
-  background-size: 100% 100%;
-  height: 43em;
-}
-
-#banner2 .text {
-  color: #fff;
-  line-height: 1.75;
-  margin-left: auto;
-  margin-right: auto;
-  padding-inline: 0.5em;
-  padding-top: 7.5em;
-  text-align: center;
-  width: calc(85% - 10vw);
-}
-
-#banner2 .cellphone {
-  aspect-ratio: 563/ 344;
-  background-image: url("./images/ic_mobile_mockup.png");
-  background-size: 100% 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-/* FORM SECTION */
-
-#contact-form label {
-  color: var(--primary-color);
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-  letter-spacing: -0.13px;
-  padding-bottom: 0.4em;
-  padding-top: 1.1em;
-  text-align: left;
-}
-
-#contact-form .btn-registrarme {
-  font-size: 1.2em;
-  margin-top: 1.5em;
-  text-align: center;
-}
-
-#contact-form input:not([type="checkbox"]),
-#contact-form select {
-  height: 2.75em;
-}
-
-input,
-input:focus {
-  border-color: var(--primary-color);
-}
-
-.form-control {
-  font-size: 1rem;
-}
-
-/* BUTTONS */
-
-.btn-primary {
-  background: transparent linear-gradient(90deg, hsl(329, 80%, 50%) 0%, hsl(283, 51%, 35%) 100%) 0% 0% no-repeat
-    padding-box;
-  border: 1px solid transparent;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  min-width: 10rem;
-  position: relative;
-  z-index: 1;
-}
-
-.btn-primary::before {
-  background: transparent linear-gradient(90deg, hsl(329, 80%, 40%) 0%, hsl(283, 51%, 25%) 100%) 0% 0% no-repeat
-    padding-box;
-  border-radius: inherit;
-  bottom: 0;
-  content: "";
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: opacity 0.15s linear;
-  z-index: -1;
-}
-
-.btn-primary:hover::before {
-  opacity: 1;
-}
-
-.btn-outline-primary {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-check:active + .btn-outline-primary,
-.btn-check:checked + .btn-outline-primary,
-.btn-outline-primary.active,
-.btn-outline-primary.dropdown-toggle.show,
-.btn-outline-primary:active {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn:focus,
-.btn-check:active + .btn-outline-primary:focus,
-.btn-check:checked + .btn-outline-primary:focus,
-.btn-outline-primary.active:focus,
-.btn-outline-primary.dropdown-toggle.show:focus,
-.btn-outline-primary:active:focus,
-.form-control:focus {
-  box-shadow: 0 0 0 0.25rem hsla(var(--primary-hue) var(--primary-saturation) var(--primary-lightness) / 0.25);
-}
-
 /* WHATSAPP BUTTON */
 
 .btn-secondary {
@@ -338,7 +47,9 @@ input:focus {
 }
 
 .btn-secondary:hover {
-  background-color: hsla(var(--wa-hue) var(--wa-saturation) calc(var(--wa-lightness) - 10%) / 1);
+  background-color: hsla(
+    var(--wa-hue) var(--wa-saturation) calc(var(--wa-lightness) - 10%) / 1
+  );
 }
 
 .wa-float {
@@ -352,16 +63,4 @@ input:focus {
   right: 2vh;
   width: 4rem;
   z-index: 100;
-}
-
-/* MISCELLANEOUS */
-
-hr.divider {
-  opacity: 1;
-}
-
-.spinner-border {
-  color: var(--primary-color);
-  height: 5rem;
-  width: 5rem;
 }

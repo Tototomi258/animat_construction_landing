@@ -1,28 +1,45 @@
 <script setup></script>
 
 <template>
-  <footer class="py-5 border-top">
-    <div
-      class="container d-flex flex-wrap justify-content-center justify-content-md-between align-items-baseline"
+  <div class="container">
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
     >
-      <div
-        class="col-12 col-md-4 d-flex align-items-baseline justify-content-center justify-content-md-start"
+      <p class="col-md-4 mb-0 text-muted">© 2023 Anima-t</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
       >
         <img
           src="@/assets/images/ic_logo_anima_t_footer.svg"
-          height="23"
+          height="24"
           alt="Anima-T"
         />
-      </div>
+      </a>
+
       <ul
-        class="d-flex col-12 col-md-8 flex-wrap justify-content-center justify-content-md-end list-unstyled text-center pt-4 pt-md-0"
+        class="nav col-12 col-md-4 justify-content-start justify-content-md-end list-unstyled d-flex"
       >
-        <li>
-          <span class="ps-md-4 text-muted small">
-            © Copyright 2021, all rights reserved
-          </span>
+        <li class="ms-3">
+          <a class="text-muted" href="https://youtu.be/9Rn35qHnsLU">
+            <i class="bi bi-youtube fs-4"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a
+            class="text-muted"
+            href="https://www.linkedin.com/company/anima-t/"
+          >
+            <i class="bi bi-linkedin fs-4"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="mailto:contacto@anima-t.com">
+            <i class="bi bi-envelope-fill fs-4"></i>
+          </a>
         </li>
       </ul>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </template>
